@@ -14,6 +14,14 @@ button {
   font-size: 1.125rem;
   color: var(--white);
 
+  @media (max-width: 570px) {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    margin-left: 50px;
+    font-size: 0.825rem;
+  }
+
   &:hover {
     background: var(--background-button2);
   }
@@ -31,5 +39,11 @@ button {
   &.selected {
     background: var(--background-button2);
     color: var(--yellow);
+  }
+
+  @media (max-width: 570px) {
+    svg {
+      display: none;
+    }
   }
 }

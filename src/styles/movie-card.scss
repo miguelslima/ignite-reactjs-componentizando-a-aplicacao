@@ -4,6 +4,12 @@
   img {
     width: 14.31rem;
     height: 21.25rem;
+
+    
+    @media (max-width: 570px) {
+      width: 10.31rem;
+      height: 15.25rem;
+    }
   }
 
   > div {
@@ -21,36 +27,46 @@
     .movie-info {
       max-width: 12.31rem;
       width: 100%;
-      
+
       display: flex;
       flex-direction: column;
-  
+
       > span {
         font-weight: 600;
         font-size: 1rem;
         color: #fbfbfb;
-  
+
         margin-top: auto;
         margin-bottom: 0.5rem;
+
+        @media (max-width: 570px) {
+          padding-left: 12px;
+          font-size: 0.75rem;
+        }
       }
-  
+
       .meta {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-  
+
         margin-bottom: 1rem;
-  
+
         div {
           display: flex;
           align-items: center;
-  
+
           font-weight: 600;
           color: var(--gray);
-  
+
           svg {
-            color: #FAE800;
+            color: #fae800;
             margin-right: 0.5rem;
+          }
+
+          @media (max-width: 570px) {
+            font-size: 0.55rem;
+            padding: 0 10px;
           }
         }
       }
